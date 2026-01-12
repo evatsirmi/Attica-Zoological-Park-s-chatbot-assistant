@@ -1,0 +1,201 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a bot?
+
+
+
+- intent: ask_ticket_prices
+  examples: |
+    - Πόσο κάνουν τα εισιτήρια;
+    - Πόσο κάνει το εισιτήριο;
+    - Πόσο έχει το εισιτήριο;
+    - Πόσο έχουν τα εισιτήρια;
+    - Πόσο κοστίζει το εισιτήριο
+    - Πόσο κοστίζουν τα εισιτήρια;
+    - Πόσο είναι η είσοδος;
+    - Πόσο έχει η είσοδος;
+    - Πες μου τις τιμές των εισιτηρίων
+    - Δώσε μου τις τιμές των εισιτηρίων
+
+- intent: ask_child_ticket
+  examples: |
+    - Πόσο κοστίζει για ένα παιδί;
+    - Πόσο κάνει το παιδικό εισιτήριο;
+    - Πόσο κοστίζει το παιδικό εισιτήριο;
+    - Πόσο έχει το παιδικό εισιτήριο;
+
+- intent: ask_family_ticket
+  examples: |
+    - Πόσο κοστίζει για μία οικογένεια;
+    - Υπάρχουν οικογενειακά πακέτα;
+    - Υπάρχουν οικογενειακά εισιτήρια;
+    - Πόσο κάνουν τα οικογενειακά εισιτήρια;
+    - Πόσο κοστίζουν τα οικογενειακά εισιτήρια;
+    - Πόσο κάνουν τα οικογενειακά εισιτήρια;
+
+- intent: ask_school_ticket
+  examples: |
+    - Πόσο κοστίζει για ένα σχολείο;
+    - Υπάρχουν πακέτα για σχολεία;
+    - Τιμές για σχολεία;
+    - Πόσο κοστίζουν τα σχολικά εισιτήρια;
+    - Υπάρχουν σχολικά εισιτήρια;
+
+- intent: ask_annual_ticket
+  examples: |
+    - Υπάρχουν ετήσια πακέτα;
+    - Υπάρχουν πακέτα για όλον το χρόνο;
+    - Υπάρχουν ετήσιες κάρτες;
+
+- intent: ask_discount
+  examples: |
+    - Έχει έκπτωση;
+    - Υπάρχουν εκπτώσεις;
+    - Υπάρχουν μειωμένα εισιτήρια;
+    - Πόσο κοστίζουν το μειωμένο εισιτήριο;
+    - Υπάρχουν ειδικά εισιτήρια;
+
+- intent: ask_bus_info
+  examples: |
+    - Τι λεωφορεία περνάνε από το πάρκο;
+    - Πότε έρχεται το επόμενο λεωφορείο;
+    - Υπάρχει λεωφορείο για το Αττικό Πάρκο;
+    - Πώς μπορώ να έρθω με λεωφορείο;
+    - Δρομολόγια λεωφορείων κοντά στο αττικό πάρκο
+
+- intent: ask_weather
+  examples: |
+    - Τι καιρό έχει στο πάρκο
+    - Πώς είναι ο καιρός στο αττικό πάρκο
+    - καιρός στο Αττικό Πάρκο
+    - Θα βρέξει σήμερα;
+    - Βροχή, καταγίδα στο αττικό πάρκο
+    - Τι καιρό έχει στο αττικό ζωολογικό πάρκο
+    - Κάνει κρύο στο αττικό πάρκο;
+    - Κάνει ζέστη στο αττικό πάρκο;
+    - Έχει καύσωνα στο αττικό πάρκο;
+
+- intent: ask_bird_show
+  examples: |
+    - Τι ώρα είναι η πτήση των πτηνών;
+    - Υπάρχει πτήση πτηνών σήμερα;
+
+- intent: ask_elephants
+  examples: |
+    - Τι ώρα είναι τα ταΐσματα των ελεφάντων;
+    - Υπάρχουν ταΐσματα ελεφάντων σήμερα;
+
+- intent: ask_lemurs
+  examples: |
+    - Πότε ταΐζονται οι λεμούριοι;
+    - Λεμούριοι πρόγραμμα;
+
+- intent: ask_chimps
+  examples: |
+    - Πότε είναι η ομιλία για τους χιμπατζήδες;
+    - Χιμπατζήδες ταΐσματα;
+
+- intent: ask_penguins
+  examples: |
+    - Πότε ταΐζονται οι αφρικάνικοι πιγκουίνοι;
+    - Πιγκουίνοι πρόγραμμα;
+
+- intent: ask_dolphins
+  examples: |
+    - Ποιες ώρες είναι ανοιχτός ο χώρος δελφινιών;
+    - Χώρος δελφινιών ώρες;
+    - Πότε είναι τα δελφίνια;
+
+
+
+
+
+

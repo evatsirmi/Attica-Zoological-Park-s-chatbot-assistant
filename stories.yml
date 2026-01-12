@@ -1,0 +1,102 @@
+version: "3.1"
+
+stories:
+
+
+
+- story: ερώτηση για απλά εισιτήρια
+  steps:
+    - intent: ask_ticket_prices
+    - action: utter_ticket_prices
+
+- story: ερώτηση για παιδικό εισιτήριο
+  steps:
+    - intent: ask_child_ticket
+    - action: utter_child_ticket
+
+- story: ερώτηση για οικογενειακά εισιτήρια
+  steps:
+    - intent: ask_family_ticket
+    - action: utter_family_ticket
+
+- story: ερώτηση για σχολεία
+  steps:
+    - intent: ask_school_ticket
+    - action: utter_school_ticket
+
+- story: ερώτηση για ετήσιες κάρτες
+  steps:
+    - intent: ask_annual_ticket
+    - action: utter_annual_ticket
+
+- story: ερώτηση για εκπτώσεις
+  steps:
+    - intent: ask_discount
+    - action: utter_discount
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Πληροφορίες δρομολογίων προς Αττικό πάρκο
+  steps:
+  - intent: ask_bus_info
+  - action: utter_bus_info
+  - action: action_oasa_arrivals
+
+
+
+- story: Feeding schedule multi-animal
+  steps:
+  - intent: ask_bird_show
+  - action: action_animal_schedule
+
+- story: Elephant feeding
+  steps:
+  - intent: ask_elephants
+  - action: action_animal_schedule
+
+- story: Lemur feeding
+  steps:
+  - intent: ask_lemurs
+  - action: action_animal_schedule
+
+- story: Chimpanzee feeding
+  steps:
+  - intent: ask_chimps
+  - action: action_animal_schedule
+
+- story: Penguin feeding
+  steps:
+  - intent: ask_penguins
+  - action: action_animal_schedule
+
+- story: Dolphin hours
+  steps:
+  - intent: ask_dolphins
+  - action: action_animal_schedule
+
